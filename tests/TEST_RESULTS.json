@@ -1,0 +1,197 @@
+{
+  "ranAt": "2026-10-27T16:53:32.377Z",
+  "results": [
+    {
+      "id": 2,
+      "name": "Invalid input is rejected",
+      "pass": true,
+      "detail": "name error shown: true, phone error shown: true, records: 0"
+    },
+    {
+      "id": "2b",
+      "name": "Unknown referral code is rejected",
+      "pass": true,
+      "detail": "ref error shown: true"
+    },
+    {
+      "id": 1,
+      "name": "A new student can register",
+      "pass": true,
+      "detail": "ticket visible: true, records: 1, code: SAIMCFK"
+    },
+    {
+      "id": 5,
+      "name": "Acquisition source is recorded",
+      "pass": true,
+      "detail": "heard=club, source=club"
+    },
+    {
+      "id": "P1",
+      "name": "Phone number is not stored",
+      "pass": true,
+      "detail": "dk=15ed4f7415e87efc"
+    },
+    {
+      "id": 9,
+      "name": "Share message contains the correct referral link",
+      "pass": true,
+      "detail": "Register with my link: https://claude.ai/artifact/SYppRWAxDLN6MWfmGEWiQi#r-SAIMCFK"
+    },
+    {
+      "id": 3,
+      "name": "Duplicate registration is refused and not counted",
+      "pass": true,
+      "detail": "duplicate notice: true, records still: 1"
+    },
+    {
+      "id": 4,
+      "name": "Referral code is captured from the link",
+      "pass": true,
+      "detail": "prefilled=SAIMCFK, ref=SAIMCFK, source=referral"
+    },
+    {
+      "id": "4b",
+      "name": "Referrer's hall ticket count updates",
+      "pass": true,
+      "detail": "Your codeSAIMCFK1 joined with it"
+    },
+    {
+      "id": 6,
+      "name": "One person counts once even if submitted again",
+      "pass": true,
+      "detail": "records after repeat: 2"
+    },
+    {
+      "id": "6b",
+      "name": "No-code signup uses the self reported source",
+      "pass": true,
+      "detail": "source=social"
+    },
+    {
+      "id": 7,
+      "name": "Leaderboard matches the records",
+      "pass": true,
+      "detail": "college sum 3 vs records 3; top referrer count 1"
+    },
+    {
+      "id": 8,
+      "name": "Dashboard agrees with the records",
+      "pass": true,
+      "detail": "KPI 3, sources sum 3, referral KPI 1, records 3"
+    },
+    {
+      "id": "8b",
+      "name": "Synthetic view: sources add up to the unique total and are labelled",
+      "pass": true,
+      "detail": "total 528, sources 528, label \"Synthetic demo · 525 of 528\""
+    },
+    {
+      "id": "8c",
+      "name": "Each recommendation shows its metric and threshold",
+      "pass": true,
+      "detail": "7 rules rendered with metric + threshold"
+    },
+    {
+      "id": "A1",
+      "name": "Ambassador kit works and keeps the link; AI languages disabled without AI",
+      "pass": true,
+      "detail": "activated: true, link in message: true, AI option disabled: true"
+    },
+    {
+      "id": "A2",
+      "name": "Messages with synthetic numbers carry a do-not-send warning",
+      "pass": true,
+      "detail": "warning shown on Day 5 in synthetic view: true"
+    },
+    {
+      "id": 11,
+      "name": "Missing AI does not crash; demo mode is used",
+      "pass": true,
+      "detail": "mode chip \"Demo mode: rule based, no AI in this view\", score 80, page errors 0"
+    },
+    {
+      "id": 12,
+      "name": "Judge output is labelled with its mode and evidence limits",
+      "pass": true,
+      "detail": "criterion points 17+16+17+17+13 = 80 vs total 80"
+    },
+    {
+      "id": "12b",
+      "name": "Resume line claims only completed work",
+      "pass": true,
+      "detail": "no live link given, so the line says Built, not Built and deployed"
+    },
+    {
+      "id": 13,
+      "name": "Demo certificate is not presented as official",
+      "pass": true,
+      "detail": "verify: YesID exists in this prototypeYesBelongs to: Sai A. · SRM Univ. AP · “Resume Reviewer for ECE Core Roles” · Built 80/100YesIs a demonstration artifactNoOfficial"
+    },
+    {
+      "id": "E1",
+      "name": "Experiment link tags the signup with its arm",
+      "pass": true,
+      "detail": "exp=t1a, ref=SAIMCFK, t2=a"
+    },
+    {
+      "id": "E2",
+      "name": "Experiments panel counts real arm signups",
+      "pass": true,
+      "detail": "Test 1 · Invite vs posterA personal message from a classmate gets more signups than a forwarded poster.Arm and linkGroup sizeSignupsPer 100 "
+    },
+    {
+      "id": "E3",
+      "name": "CSV import dedupes, rejects bad rows and keeps attribution",
+      "pass": true,
+      "detail": "imported 2 of 4 rows; sources ambassador,ambassador"
+    },
+    {
+      "id": "E4",
+      "name": "Imported records join the unique total",
+      "pass": true,
+      "detail": "KPI 6 = 4 app + 2 imported"
+    },
+    {
+      "id": "A3",
+      "name": "Tone option changes the message and keeps the link",
+      "pass": true,
+      "detail": "friendly 394 chars, short 94 chars"
+    },
+    {
+      "id": "W1",
+      "name": "What if planner reproduces the plan and reacts to assumptions",
+      "pass": true,
+      "detail": "Modelled unique registrations500Reaches 500 Ambassadors 299R → at 3%: Modelled unique registrations362138 short of 500 Ambassadors"
+    },
+    {
+      "id": "W2",
+      "name": "Show up plan computes expected attendees and lists reminders",
+      "pass": true,
+      "detail": "Expected attendees26 registered × 35%. Replies of ; 4 reminders"
+    },
+    {
+      "id": "W3",
+      "name": "Guided tour walks all 6 steps and closes",
+      "pass": true,
+      "detail": "1 of 6, 2 of 6, 3 of 6, 4 of 6, 5 of 6, 6 of 6; closed: true"
+    },
+    {
+      "id": 10,
+      "name": "Works on a 375px wide phone screen (no sideways scroll)",
+      "pass": true,
+      "detail": "all 5 tabs fit 375px"
+    },
+    {
+      "id": 14,
+      "name": "No secrets in client code",
+      "pass": true,
+      "detail": "no key patterns found"
+    },
+    {
+      "id": 15,
+      "name": "Build: script parses and the page loads without errors",
+      "pass": true,
+      "detail": "node --check: ok; runtime page errors: none"
+    }
+  ]
+}
